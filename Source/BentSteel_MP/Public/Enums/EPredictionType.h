@@ -6,7 +6,7 @@
 UENUM(BlueprintType)
 enum class EPredictionType : uint8
 {
-    NoTracking 		UMETA(DisplayName = "No Tracking"),
+    None 		    UMETA(DisplayName = "None"),
     SimpleLead 		UMETA(DisplayName = "Simple Lead"),
     AdvancedLead 	UMETA(DisplayName = "Advanced Lead"),
 };

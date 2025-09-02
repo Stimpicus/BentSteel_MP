@@ -6,6 +6,7 @@
 UENUM(BlueprintType)
 enum class EAmmo : uint8
 {
+    None     	UMETA(DisplayName = "None"),
     Bullets 	UMETA(DisplayName = "Bullets"),
     Shells 		UMETA(DisplayName = "Shells"),
     Rockets 	UMETA(DisplayName = "Rockets"),

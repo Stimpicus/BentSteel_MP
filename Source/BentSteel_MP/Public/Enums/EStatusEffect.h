@@ -6,5 +6,6 @@
 UENUM(BlueprintType)
 enum class EStatusEffect : uint8
 {
+	None			UMETA(DisplayName = "None"),
     Burning			UMETA(DisplayName = "Burning"),
 };

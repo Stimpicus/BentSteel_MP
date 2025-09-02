@@ -6,5 +6,6 @@
 UENUM(BlueprintType)
 enum class EWeapon : uint8
 {
-    bpRoofTurret UMETA(DisplayName = "bpRoofTurret"),
+	None			UMETA(DisplayName = "None"),
+    bpRoofTurret	UMETA(DisplayName = "bpRoofTurret"),
 };
