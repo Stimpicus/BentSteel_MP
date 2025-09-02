@@ -3,7 +3,7 @@
 #include "CoreMinimal.h"
 #include "Engine/Texture2D.h"
 #include "GameFramework/Actor.h"
-#include "Enums/EPredictionTypes.h"
+#include "Enums/EPredictionType.h"
 #include "Targeting.generated.h"
 
 USTRUCT(BlueprintType)
@@ -21,7 +21,7 @@ struct FTargeting
     float MaxTrackAngle = 0.0f;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    EPredictionTypes PredictType = EPredictionTypes();
+    EPredictionType PredictType = EPredictionType();
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FString Description;

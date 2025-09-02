@@ -4,7 +4,8 @@
 #include "Engine/Texture2D.h"
 #include "GameFramework/Actor.h"
 #include "Enums/EAmmo.h"
-#include "Enums/EStatusEffects.h"
+#include "Enums/EStatusEffect.h"
+#include "Projectiles/BpProjectileParent.h"
 #include "AmmoInfo.generated.h"
 
 USTRUCT(BlueprintType)
@@ -28,7 +29,7 @@ struct FAmmoInfo
     bool bIsInfinite = false;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    TSubclassOf<AActor> ProjectileObject;
+    TSubclassOf<ABpProjectileParent> ProjectileObject;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     float FlightSpeed = 0.0f;
@@ -67,7 +68,7 @@ struct FAmmoInfo
     float DamageFloor = 0.0f;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    EStatusEffects StatusEffectType = EStatusEffects();
+    EStatusEffect StatusEffectType = EStatusEffect();
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     float StatusEffectChance = 0.0f;

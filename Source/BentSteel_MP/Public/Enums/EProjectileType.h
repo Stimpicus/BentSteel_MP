@@ -1,10 +1,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "EProjectileTypes.generated.h"
+#include "EProjectileType.generated.h"
 
 UENUM(BlueprintType)
-enum class EProjectileTypes : uint8
+enum class EProjectileType : uint8
 {
     Bullet 		UMETA(DisplayName = "Bullet"),
     Rocket 		UMETA(DisplayName = "Rocket"),

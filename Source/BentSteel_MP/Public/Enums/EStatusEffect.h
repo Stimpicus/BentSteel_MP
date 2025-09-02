@@ -1,10 +1,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "EStatusEffects.generated.h"
+#include "EStatusEffect.generated.h"
 
 UENUM(BlueprintType)
-enum class EStatusEffects : uint8
+enum class EStatusEffect : uint8
 {
     Burning			UMETA(DisplayName = "Burning"),
 };

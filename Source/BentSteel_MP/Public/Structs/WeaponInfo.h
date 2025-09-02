@@ -18,7 +18,7 @@ struct FWeaponInfo
     TSubclassOf<ABpWeaponParent> WeapBp;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    EWeaponSlots WeaponSlot = EWeaponSlots();
+    EWeaponSlot WeaponSlot = EWeaponSlot();
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     EFireType FireType = EFireType();
